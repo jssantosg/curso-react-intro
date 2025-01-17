@@ -1,16 +1,16 @@
-input {
-    width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 10px auto;
-    display: block;
-    font-size: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-input:focus {
-    outline: none;
-    border-color: #007BFF;
-  }
+.TodoSearch {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px auto;
+  display: block;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.TodoSearch:focus {
+  outline: none;
+  border-color: #007BFF;
+}

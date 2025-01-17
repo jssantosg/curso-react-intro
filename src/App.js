@@ -7,8 +7,8 @@ import './App.css';
 import React from 'react';
 
 const defaultTodos = [
-  { text: 'Cortar cebolla', completed: true },
-  { text: 'Tomar el curso de intro a React.js', completed: false },
+  { text: 'Cortar cebolla v2', completed: true },
+  { text: 'Tomar el curso de intro a React.js', completed: true },
   { text: 'Llorar con la Llorona', completed: false },
   { text: 'LALALALALA', completed: false },
 ]
@@ -22,7 +22,7 @@ function App() {
 
       <TodoList>
         {defaultTodos.map(todo => (
-          <TodoItem key={todo.text} text={todo.text} complete={todo.completed}/>
+          <TodoItem key={todo.text} text={todo.text} completed={todo.completed}/>
         ))}
       </TodoList>
 

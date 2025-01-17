@@ -1,4 +1,4 @@
-li {
+.TodoItem {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,14 +7,19 @@ li {
     margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
 }
 
-li.completed {
+.TodoItem-p--complete {
     text-decoration: line-through;
     color: #6c757d;
+    font-size: 1.1rem;
 }
 
-li button {
+.Icon {
     background-color: transparent;
     border: none;
     padding: 5px 10px;
@@ -22,16 +27,29 @@ li button {
     border-radius: 3px;
     cursor: pointer;
     transition: background-color 0.3s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-li button.complete-btn {
+/* .Icon-check {
     color: #28a745;
+} */
+
+.Icon-check--active {
+    color: #4caf50;
 }
 
-li button.delete-btn {
-    color: #dc3545;
+.Icon-delete {
+    color: gray;
 }
 
-li button:hover {
+.Icon:hover {
     background-color: rgba(0, 0, 0, 0.05);
+    color: #dc3545;
 }
