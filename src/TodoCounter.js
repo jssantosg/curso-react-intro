@@ -1,11 +1,13 @@
 import './TodoCounter.css';
 
 function TodoCounter({ total, completed }) {
-    return (
-      <h1 className='TodoCounter'>
-        Has completado <span>{completed}</span> de <span>{total }</span> TODOs
-      </h1>
-    );
-  }
+  const extraText = total == completed ? [<br/>,"You are a PRO!"] : '';
+
+  return (
+    <h1 className='TodoCounter'>
+      Has completado <span>{completed}</span> de <span>{total}</span> TODOs {extraText}
+    </h1>
+  );
+}
 
 export { TodoCounter }; // Este es un export nombrado
