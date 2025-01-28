@@ -1,7 +1,7 @@
 import './TodoCounter.css';
 
 function TodoCounter({ total, completed }) {
-  const extraText = total == completed ? [<br/>,"You are a PRO!"] : '';
+  const extraText = total == completed && total > 0 ? [<br/>,"You are a PRO!"] : '';
 
   return (
     <h1 className='TodoCounter'>
