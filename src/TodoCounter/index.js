@@ -8,7 +8,7 @@ function TodoCounter() {
     totalTodos,
   } = React.useContext(TodoContext);
 
-  const extraText = totalTodos == completedTodos && totalTodos > 0 ? [<br />, "You are a PRO!"] : '';
+  const extraText = totalTodos === completedTodos && totalTodos > 0 ? [<br />, "You are a PRO!"] : '';
 
   return (
     <h1 className='TodoCounter'>
