@@ -1,11 +1,9 @@
 import './CreateTodoButton.css';
 
-function CreateTodoButton() {
+function CreateTodoButton({ setOpenModal }) {
   return (
-    <button className='CreateTodoButton' onClick={(event) => {
-      console.log('Le diste clic');
-      console.log(event);
-      console.log(event.target)
+    <button className='CreateTodoButton' onClick={() => {
+      setOpenModal(state => !state);
     }}> Crear una nueva tarea </button>
   );
 }
